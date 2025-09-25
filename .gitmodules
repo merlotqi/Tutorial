@@ -1,0 +1,6 @@
+[submodule "tutorial-qt"]
+	path = tutorial-qt
+	url = https://github.com/merlotqi/tutorial-qt.git
+[submodule "tutorial-cxx"]
+	path = tutorial-cxx
+	url = https://github.com/merlotqi/tutorial-cxx.git
