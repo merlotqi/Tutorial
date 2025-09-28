@@ -4,3 +4,6 @@
 [submodule "tutorial-cxx"]
 	path = tutorial-cxx
 	url = https://github.com/merlotqi/tutorial-cxx.git
+[submodule "Tutorial-WPF"]
+	path = Tutorial-WPF
+	url = https://github.com/merlotqi/Tutorial-WPF.git
