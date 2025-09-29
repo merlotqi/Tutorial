@@ -7,3 +7,9 @@
 [submodule "Tutorial-WPF"]
 	path = Tutorial-WPF
 	url = https://github.com/merlotqi/Tutorial-WPF.git
+[submodule "LeetCode/LeetCode-cxx"]
+	path = LeetCode/LeetCode-cxx
+	url = https://github.com/merlotqi/LeetCode-cxx.git
+[submodule "LeetCode/LeetCode-JavaScript"]
+	path = LeetCode/LeetCode-JavaScript
+	url = https://github.com/merlotqi/LeetCode-JavaScript.git

@@ -1,1 +1,12 @@
 .vscode
+
+_build/
+ch*/assets/automatic/*
+*.pdf
+*.pyc
+*.qmlc
+*.jsc
+
+venv
+*.qmlproject.user
+node_modules/
