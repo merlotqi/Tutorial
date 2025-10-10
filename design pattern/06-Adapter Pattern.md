@@ -5,12 +5,14 @@
 The Adapter pattern is a structural design pattern that allows objects with incompatible interfaces to collaborate. It acts as a bridge between two incompatible interfaces by converting the interface of one class into an interface expected by the clients.
 
 ### Key Characteristics
+
 - **Interface Translation**: Converts one interface to another
 - **Client Transparency**: Clients work with the target interface without knowing about the adaptee
 - **Reusability**: Allows existing classes to be reused with incompatible interfaces
 - **Two-Way Communication**: Can adapt both requests and responses
 
 ### Use Cases
+
 - When you want to use an existing class, but its interface doesn't match what you need
 - When you want to create a reusable class that cooperates with unrelated or unforeseen classes
 - When you need to use several existing subclasses, but it's impractical to adapt their interface by subclassing each one
@@ -20,6 +22,7 @@ The Adapter pattern is a structural design pattern that allows objects with inco
 ### C++ Implementation
 
 #### Class Adapter (Multiple Inheritance)
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -104,6 +107,7 @@ int main() {
 ```
 
 #### Object Adapter (Composition)
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -402,6 +406,7 @@ int main() {
 ### Python Implementation
 
 #### Basic Adapter Pattern
+
 ```python
 from abc import ABC, abstractmethod
 from typing import List
@@ -530,6 +535,7 @@ if __name__ == "__main__":
 ```
 
 #### Advanced Adapter Examples
+
 ```python
 from abc import ABC, abstractmethod
 from datetime import datetime, timedelta
@@ -719,6 +725,7 @@ if __name__ == "__main__":
 ```
 
 #### Two-Way Adapter Pattern
+
 ```python
 from abc import ABC, abstractmethod
 from typing import List
@@ -833,12 +840,14 @@ if __name__ == "__main__":
 ## Advantages and Disadvantages
 
 ### Advantages
+
 - **Compatibility**: Enables collaboration between incompatible interfaces
 - **Reusability**: Allows reuse of existing functionality
 - **Single Responsibility**: Separation of interface conversion from business logic
 - **Open/Closed Principle**: Can introduce new adapters without changing existing code
 
 ### Disadvantages
+
 - **Complexity**: Can increase overall system complexity
 - **Performance overhead**: Additional layer may impact performance
 - **Overuse**: Can be overused when refactoring would be better

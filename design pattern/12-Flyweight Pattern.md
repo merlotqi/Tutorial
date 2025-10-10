@@ -5,12 +5,14 @@
 The Flyweight pattern is a structural design pattern that minimizes memory usage by sharing as much data as possible with similar objects. It's used when you need to create a large number of similar objects efficiently.
 
 ### Key Characteristics
+
 - **Shared State**: Intrinsic state is shared among multiple objects
 - **Unique State**: Extrinsic state is stored or computed externally
 - **Memory Efficiency**: Reduces memory footprint by sharing common data
 - **Object Pooling**: Maintains a pool of reusable objects
 
 ### Use Cases
+
 - When an application uses a large number of objects
 - When storage costs are high due to object quantity
 - When most object state can be made extrinsic
@@ -22,6 +24,7 @@ The Flyweight pattern is a structural design pattern that minimizes memory usage
 ### C++ Implementation
 
 #### Text Editor Character Flyweight
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -190,6 +193,7 @@ int main() {
 ```
 
 #### Game Terrain Flyweight
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -646,6 +650,7 @@ int main() {
 ### Python Implementation
 
 #### Icon Flyweight for GUI Applications
+
 ```python
 from abc import ABC, abstractmethod
 from typing import Dict, List, Tuple
@@ -840,6 +845,7 @@ if __name__ == "__main__":
 ```
 
 #### CSS Style Flyweight for Web Applications
+
 ```python
 from abc import ABC, abstractmethod
 from typing import Dict, List, Set, Any
@@ -1144,12 +1150,14 @@ if __name__ == "__main__":
 ## Advantages and Disadvantages
 
 ### Advantages
+
 - **Reduced Memory Usage**: Significantly decreases memory footprint by sharing common state
 - **Improved Performance**: Fewer objects to create and manage
 - **Scalability**: Can handle large numbers of objects efficiently
 - **Centralized State Management**: Shared state is managed in one place
 
 ### Disadvantages
+
 - **Increased Complexity**: Adds complexity to the codebase
 - **Runtime Overhead**: May introduce lookup overhead in the factory
 - **Thread Safety**: Requires careful implementation in multi-threaded environments

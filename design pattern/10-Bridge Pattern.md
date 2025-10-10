@@ -5,12 +5,14 @@
 The Bridge pattern is a structural design pattern that separates abstraction from implementation so that both can vary independently. It decouples an abstraction from its implementation, allowing the two to evolve independently without binding them at compile time.
 
 ### Key Characteristics
+
 - **Decoupling**: Separates abstraction and implementation hierarchies
 - **Independent Evolution**: Both abstraction and implementation can be extended independently
 - **Composition over Inheritance**: Uses composition to bridge abstraction and implementation
 - **Multiple Dimensions**: Handles multiple orthogonal classifications efficiently
 
 ### Use Cases
+
 - When you want to avoid permanent binding between abstraction and implementation
 - When both abstractions and implementations should be extensible via subclassing
 - When changes in implementation should not affect clients
@@ -22,6 +24,7 @@ The Bridge pattern is a structural design pattern that separates abstraction fro
 ### C++ Implementation
 
 #### Basic Bridge Pattern - Device and Remote Control
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -292,6 +295,7 @@ int main() {
 ```
 
 #### Shape and Renderer Bridge Example
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -904,6 +908,7 @@ int main() {
 ### Python Implementation
 
 #### Notification System Bridge Pattern
+
 ```python
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any
@@ -1255,6 +1260,7 @@ if __name__ == "__main__":
 ```
 
 #### Database ORM Bridge Pattern
+
 ```python
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any, Optional
@@ -1716,6 +1722,7 @@ if __name__ == "__main__":
 ## Advantages and Disadvantages
 
 ### Advantages
+
 - **Decoupling**: Separates abstraction from implementation completely
 - **Single Responsibility**: Each class focuses on either abstraction or implementation
 - **Open/Closed**: Both hierarchies can be extended independently
@@ -1723,6 +1730,7 @@ if __name__ == "__main__":
 - **Avoids Explosion**: Prevents class explosion in multi-dimensional scenarios
 
 ### Disadvantages
+
 - **Increased Complexity**: Adds more classes and interfaces to the codebase
 - **Double Indirection**: May impact performance due to additional method calls
 - **Design Overhead**: Requires careful design to identify the right abstraction boundaries

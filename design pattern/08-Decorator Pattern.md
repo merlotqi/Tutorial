@@ -5,6 +5,7 @@
 The Decorator pattern is a structural design pattern that allows behavior to be added to individual objects, dynamically, without affecting the behavior of other objects from the same class. It provides a flexible alternative to subclassing for extending functionality.
 
 ### Key Characteristics
+
 - **Dynamic Composition**: Add responsibilities to objects at runtime
 - **Transparent Wrapping**: Decorators wrap components and maintain the same interface
 - **Recursive Composition**: Can nest decorators arbitrarily
@@ -12,6 +13,7 @@ The Decorator pattern is a structural design pattern that allows behavior to be 
 - **Alternative to Inheritance**: More flexible than static inheritance
 
 ### Use Cases
+
 - When you need to add responsibilities to individual objects dynamically and transparently
 - When extension by subclassing is impractical (too many combinations)
 - When you want to add and remove responsibilities at runtime
@@ -23,6 +25,7 @@ The Decorator pattern is a structural design pattern that allows behavior to be 
 ### C++ Implementation
 
 #### Basic Decorator Pattern - Coffee Shop Example
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -205,6 +208,7 @@ int main() {
 ```
 
 #### Text Processing Decorator Example
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -616,6 +620,7 @@ int main() {
 ### Python Implementation
 
 #### Basic Decorator Pattern - Pizza Example
+
 ```python
 from abc import ABC, abstractmethod
 from typing import List
@@ -800,6 +805,7 @@ if __name__ == "__main__":
 ```
 
 #### Advanced Python Decorators - File Processing
+
 ```python
 from abc import ABC, abstractmethod
 from typing import Any, List, Dict
@@ -1077,6 +1083,7 @@ if __name__ == "__main__":
 ## Advantages and Disadvantages
 
 ### Advantages
+
 - **Flexibility**: Add responsibilities dynamically at runtime
 - **Single Responsibility**: Each decorator has one specific responsibility
 - **Open/Closed Principle**: Can extend functionality without modifying existing code
@@ -1084,6 +1091,7 @@ if __name__ == "__main__":
 - **Composition over Inheritance**: Favors object composition over class inheritance
 
 ### Disadvantages
+
 - **Complexity**: Can lead to many small classes that complicate the design
 - **Debugging Difficulty**: Hard to trace through multiple layers of decorators
 - **Initialization Overhead**: Object instantiation can become complex with many decorators

@@ -5,12 +5,14 @@
 The Factory Method pattern is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 
 ### Key Characteristics
+
 - **Encapsulation**: Encapsulates object creation logic
 - **Flexibility**: Allows subclasses to decide which class to instantiate
 - **Loose Coupling**: Client code works with interfaces rather than concrete implementations
 - **Extensibility**: Easy to add new product types without modifying existing code
 
 ### Use Cases
+
 - When a class cannot anticipate the class of objects it must create
 - When you want to provide a library of products and only reveal their interfaces
 - When you want to delegate object creation to subclasses
@@ -20,7 +22,8 @@ The Factory Method pattern is a creational design pattern that provides an inter
 
 ### C++ Implementation
 
-#### Basic Factory Method
+#### C++ Basic Factory Method
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -111,6 +114,7 @@ int main() {
 ```
 
 #### Parameterized Factory Method
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -329,7 +333,8 @@ int main() {
 
 ### Python Implementation
 
-#### Basic Factory Method
+#### Python Basic Factory Method
+
 ```python
 from abc import ABC, abstractmethod
 from enum import Enum
@@ -394,6 +399,7 @@ if __name__ == "__main__":
 ```
 
 #### Parameterized Factory in Python
+
 ```python
 from abc import ABC, abstractmethod
 from typing import Dict, Type
@@ -483,6 +489,7 @@ if __name__ == "__main__":
 ```
 
 #### Python with Class-based Factory Method
+
 ```python
 from abc import ABC, abstractmethod
 
@@ -561,12 +568,14 @@ if __name__ == "__main__":
 ## Advantages and Disadvantages
 
 ### Advantages
+
 - **Flexibility**: Easy to add new product types without modifying existing code
 - **Loose Coupling**: Client code depends on interfaces rather than concrete classes
 - **Single Responsibility**: Object creation code is centralized
 - **Open/Closed Principle**: Easy to extend with new product types
 
 ### Disadvantages
+
 - **Complexity**: Can introduce many small classes
 - **Overhead**: May be overkill for simple object creation
 - **Client dependency**: Client might need to know which creator to use

@@ -5,12 +5,14 @@
 The Composite pattern is a structural design pattern that allows you to compose objects into tree structures to represent part-whole hierarchies. It lets clients treat individual objects and compositions of objects uniformly.
 
 ### Key Characteristics
+
 - **Tree Structure**: Represents hierarchical part-whole relationships
 - **Uniform Treatment**: Clients can treat individual objects and compositions uniformly
 - **Recursive Composition**: Components can contain other components
 - **Transparent Structure**: Clients don't need to know if they're dealing with leaf or composite nodes
 
 ### Use Cases
+
 - When you need to represent part-whole hierarchies of objects
 - When you want clients to ignore differences between individual objects and compositions
 - When you need to build recursive tree structures
@@ -21,6 +23,7 @@ The Composite pattern is a structural design pattern that allows you to compose 
 ### C++ Implementation
 
 #### File System Composite Example
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -186,6 +189,7 @@ int main() {
 ```
 
 #### Graphic System Composite Example
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -722,6 +726,7 @@ int main() {
 ### Python Implementation
 
 #### Menu System Composite Example
+
 ```python
 from abc import ABC, abstractmethod
 from typing import List, Optional
@@ -962,6 +967,7 @@ if __name__ == "__main__":
 ```
 
 #### UI Components Composite Example
+
 ```python
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any
@@ -1372,6 +1378,7 @@ if __name__ == "__main__":
 ## Advantages and Disadvantages
 
 ### Advantages
+
 - **Uniform Treatment**: Clients can treat individual objects and compositions uniformly
 - **Simplified Client Code**: Clients don't need to know if they're dealing with leaf or composite nodes
 - **Easy to Add New Components**: New component types can be added easily
@@ -1379,6 +1386,7 @@ if __name__ == "__main__":
 - **Recursive Operations**: Operations can be applied recursively over the entire structure
 
 ### Disadvantages
+
 - **Overgeneralization**: Might make the design overly general and harder to understand
 - **Type Safety**: May compromise type safety in statically typed languages
 - **Performance**: Can be less efficient than specialized solutions for specific cases

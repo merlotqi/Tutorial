@@ -5,12 +5,14 @@
 The Proxy pattern is a structural design pattern that provides a surrogate or placeholder for another object to control access to it. A proxy acts as an intermediary between the client and the real object, adding additional functionality without changing the real object's code.
 
 ### Key Characteristics
+
 - **Access Control**: Controls access to the real object
 - **Additional Functionality**: Adds extra behavior like caching, logging, or security
 - **Lazy Initialization**: Defers object creation until necessary
 - **Location Transparency**: Client interacts with proxy as if it were the real object
 
 ### Use Cases
+
 - **Virtual Proxy**: For expensive objects that should be created on demand
 - **Protection Proxy**: To control access to sensitive operations
 - **Remote Proxy**: To represent objects in different address spaces
@@ -22,6 +24,7 @@ The Proxy pattern is a structural design pattern that provides a surrogate or pl
 ### C++ Implementation
 
 #### Virtual Proxy (Lazy Loading)
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -216,6 +219,7 @@ int main() {
 ```
 
 #### Smart Pointer Proxy
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -490,6 +494,7 @@ int main() {
 ### Python Implementation
 
 #### Virtual Proxy and Protection Proxy
+
 ```python
 import time
 from abc import ABC, abstractmethod
@@ -658,6 +663,7 @@ if __name__ == "__main__":
 ```
 
 #### Remote Proxy and Logging Proxy
+
 ```python
 import json
 import time
@@ -883,6 +889,7 @@ if __name__ == "__main__":
 ```
 
 #### Smart Reference Proxy
+
 ```python
 import weakref
 from abc import ABC, abstractmethod
@@ -1016,6 +1023,7 @@ if __name__ == "__main__":
 ## Advantages and Disadvantages
 
 ### Advantages
+
 - **Controlled Access**: Add security, caching, or logging without changing real object
 - **Lazy Initialization**: Defer expensive operations until needed
 - **Memory Management**: Smart proxies can manage object lifecycle
@@ -1023,6 +1031,7 @@ if __name__ == "__main__":
 - **Additional Functionality**: Easy to add cross-cutting concerns
 
 ### Disadvantages
+
 - **Complexity**: Additional layer can make system more complex
 - **Performance Overhead**: Extra indirection may impact performance
 - **Debugging Difficulty**: Harder to trace through proxy layers

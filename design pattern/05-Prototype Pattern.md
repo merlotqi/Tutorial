@@ -5,12 +5,14 @@
 The Prototype pattern is a creational design pattern that allows creating new objects by copying existing objects (prototypes) rather than creating new instances from scratch. This pattern is particularly useful when object creation is expensive or complex.
 
 ### Key Characteristics
+
 - **Object Cloning**: Creates new objects by copying existing prototypes
 - **Reduced Overhead**: Avoids expensive initialization operations
 - **Flexibility**: Clients can create new objects without knowing their concrete classes
 - **Dynamic Configuration**: Prototypes can be configured at runtime
 
 ### Use Cases
+
 - When object creation is more expensive than copying
 - When the system should be independent of how its products are created, composed, and represented
 - When classes to instantiate are specified at runtime
@@ -21,6 +23,7 @@ The Prototype pattern is a creational design pattern that allows creating new ob
 ### C++ Implementation
 
 #### Basic Prototype Pattern
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -151,6 +154,7 @@ int main() {
 ```
 
 #### Advanced Prototype with Different Object Types
+
 ```cpp
 #include <iostream>
 #include <string>
@@ -512,7 +516,8 @@ int main() {
 
 ### Python Implementation
 
-#### Basic Prototype Pattern
+#### Python Basic Prototype Pattern
+
 ```python
 import copy
 from abc import ABC, abstractmethod
@@ -622,6 +627,7 @@ if __name__ == "__main__":
 ```
 
 #### Advanced Prototype with Complex Objects
+
 ```python
 import copy
 from abc import ABC, abstractmethod
@@ -785,6 +791,7 @@ if __name__ == "__main__":
 ```
 
 #### Prototype with Customizable Cloning
+
 ```python
 import copy
 from typing import List, Set, Any
@@ -892,6 +899,7 @@ if __name__ == "__main__":
 ## Advantages and Disadvantages
 
 ### Advantages
+
 - **Reduced initialization cost**: Avoids expensive constructor operations
 - **Simplified object creation**: Clients don't need to know concrete classes
 - **Runtime object configuration**: Objects can be configured before cloning
@@ -899,6 +907,7 @@ if __name__ == "__main__":
 - **Dynamic object creation**: New objects can be added at runtime
 
 ### Disadvantages
+
 - **Complex cloning**: Deep copying complex objects can be challenging
 - **Circular references**: Can cause issues during cloning
 - **Overhead**: Cloning might be expensive for very large objects
@@ -919,6 +928,7 @@ if __name__ == "__main__":
 - **vs Builder**: Prototype copies existing objects, while Builder constructs objects step by step
 
 The Prototype pattern is particularly useful in scenarios where:
+
 - Object creation is expensive or complex
 - You need to create objects that are similar to existing ones
 - You want to avoid the overhead of subclassing

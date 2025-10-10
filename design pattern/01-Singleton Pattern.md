@@ -5,12 +5,14 @@
 The Singleton pattern is a creational design pattern that ensures a class has only one instance and provides a global point of access to that instance.
 
 ### Key Characteristics
+
 - **Single Instance**: Guarantees that only one instance of the class exists
 - **Global Access**: Provides a unified access point for other objects to use the instance
 - **Lazy Initialization**: Typically creates the instance only when first requested
 - **Thread Safety**: Ensures instance creation remains unique in multi-threaded environments
 
 ### Use Cases
+
 - When you need to control shared resources (e.g., configuration files, log managers)
 - When objects are frequently created and destroyed
 - When object creation is resource-intensive and reuse is beneficial
@@ -20,7 +22,8 @@ The Singleton pattern is a creational design pattern that ensures a class has on
 
 ### C++ Implementation
 
-#### Basic Version
+#### C++ Basic Version
+
 ```cpp
 #include <iostream>
 #include <mutex>
@@ -81,6 +84,7 @@ int main() {
 ```
 
 #### Modern C++ Version (C++11 and later)
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -178,7 +182,8 @@ int main() {
 
 ### Python Implementation
 
-#### Basic Version
+#### Python Basic Version
+
 ```python
 class Singleton:
     _instance = None
@@ -211,6 +216,7 @@ if __name__ == "__main__":
 ```
 
 #### Thread-Safe Python Version
+
 ```python
 import threading
 
@@ -254,6 +260,7 @@ if __name__ == "__main__":
 ```
 
 #### Python Metaclass Implementation
+
 ```python
 class SingletonMeta(type):
     _instances = {}
@@ -285,12 +292,14 @@ if __name__ == "__main__":
 ## Advantages and Disadvantages
 
 ### Advantages
+
 - **Controlled access**: Single point of access to the instance
 - **Reduced memory usage**: Only one instance exists in memory
 - **Global state management**: Useful for shared resources
 - **Lazy initialization**: Instance created only when needed
 
 ### Disadvantages
+
 - **Global state**: Can introduce hidden dependencies
 - **Testing difficulties**: Hard to unit test due to global state
 - **Thread safety complexity**: Requires careful implementation in multi-threaded environments

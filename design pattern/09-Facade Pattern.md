@@ -5,12 +5,14 @@
 The Facade pattern is a structural design pattern that provides a simplified interface to a complex subsystem of classes, library, or framework. It hides the complexities of the underlying system and provides a unified, higher-level interface that makes the subsystem easier to use.
 
 ### Key Characteristics
+
 - **Simplified Interface**: Provides a simple, unified interface to a complex subsystem
 - **Decoupling**: Reduces dependencies between clients and subsystem components
 - **Ease of Use**: Makes subsystem easier to use and understand
 - **Single Entry Point**: Acts as a single point of entry to the subsystem
 
 ### Use Cases
+
 - When you need to provide a simple interface to a complex subsystem
 - When you want to decouple clients from subsystem components
 - When you need to layer your subsystems and provide entry points to each layer
@@ -22,6 +24,7 @@ The Facade pattern is a structural design pattern that provides a simplified int
 ### C++ Implementation
 
 #### Home Theater Facade Example
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -233,6 +236,7 @@ int main() {
 ```
 
 #### Computer System Facade Example
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -639,6 +643,7 @@ int main() {
 ### Python Implementation
 
 #### E-commerce Order Processing Facade
+
 ```python
 from abc import ABC, abstractmethod
 from typing import List, Dict, Optional
@@ -930,6 +935,7 @@ if __name__ == "__main__":
 ```
 
 #### Banking System Facade
+
 ```python
 from abc import ABC, abstractmethod
 from typing import Dict, List, Optional
@@ -1313,6 +1319,7 @@ if __name__ == "__main__":
 ## Advantages and Disadvantages
 
 ### Advantages
+
 - **Simplified Interface**: Provides a simple interface to a complex subsystem
 - **Decoupling**: Reduces coupling between clients and subsystem components
 - **Easier to Use**: Makes subsystem easier to use and understand
@@ -1320,6 +1327,7 @@ if __name__ == "__main__":
 - **Improved Maintainability**: Changes to subsystem don't affect clients as long as facade interface remains the same
 
 ### Disadvantages
+
 - **God Object Risk**: Facade can become a "god object" coupled to all subsystem classes
 - **Limited Flexibility**: May not expose all functionality of the subsystem
 - **Additional Layer**: Adds another layer of abstraction which can impact performance

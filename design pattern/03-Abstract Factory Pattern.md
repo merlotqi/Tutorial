@@ -5,12 +5,14 @@
 The Abstract Factory pattern is a creational design pattern that provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 ### Key Characteristics
+
 - **Family Creation**: Creates groups of related objects
 - **Interface-based**: Works with interfaces rather than concrete implementations
 - **Consistency**: Ensures created objects are compatible with each other
 - **Encapsulation**: Hides concrete class instantiation from client code
 
 ### Use Cases
+
 - When a system needs to be independent of how its products are created, composed, and represented
 - When a system should be configured with multiple families of products
 - When you need to enforce that related products are used together
@@ -21,6 +23,7 @@ The Abstract Factory pattern is a creational design pattern that provides an int
 ### C++ Implementation
 
 #### Basic Abstract Factory
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -169,6 +172,7 @@ int main() {
 ```
 
 #### Extended Abstract Factory with Multiple Products
+
 ```cpp
 #include <iostream>
 #include <memory>
@@ -429,7 +433,8 @@ int main() {
 
 ### Python Implementation
 
-#### Basic Abstract Factory
+#### Python Basic Abstract Factory
+
 ```python
 from abc import ABC, abstractmethod
 from typing import Protocol
@@ -537,6 +542,7 @@ if __name__ == "__main__":
 ```
 
 #### Database Abstract Factory Example
+
 ```python
 from abc import ABC, abstractmethod
 from typing import List, Optional
@@ -694,6 +700,7 @@ if __name__ == "__main__":
 ```
 
 #### Modern Python with Type Hints and Registry
+
 ```python
 from abc import ABC, abstractmethod
 from typing import Dict, Type, Protocol
@@ -836,12 +843,14 @@ if __name__ == "__main__":
 ## Advantages and Disadvantages
 
 ### Advantages
+
 - **Consistency**: Ensures compatible products are used together
 - **Loose Coupling**: Client code works with interfaces, not concrete classes
 - **Single Responsibility**: Product creation code is centralized
 - **Open/Closed Principle**: Easy to introduce new product families
 
 ### Disadvantages
+
 - **Complexity**: Can result in many classes and interfaces
 - **Rigidity**: Adding new products requires modifying all factories
 - **Over-engineering**: May be too complex for simple scenarios
